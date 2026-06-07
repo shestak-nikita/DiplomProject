@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Будинок Інформаційних Технологій | Тарифи</title>
+    <link rel="shortcut icon" href="images/x-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down" />
+    <script src="./scripts/main.js" type="module"></script>
+</head>
+<body>
+    <header class="header" data-js-header>
+        <div class="header__body">
+            <div class="header__body-inner container">
+                <a
+                        class="header__logo logo"
+                        href="/"
+                        aria-label="Home"
+                        title="Home"
+                >
+                    <img
+                            src="./images/logoPadding-block20.svg"
+                            alt=""
+                            class="logo__image"
+                            width="200" height="109"
+                    >
+                </a>
+                <div class="header__overlay" data-js-header-overlay>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav_item">
+                                <a href="./index.html" class="header__nav-link">Новини</a>
+                            </li>
+                            <li class="header__nav_item">
+                                <a href="./company.html" class="header__nav-link">Про компанію</a>
+                            </li>
+                            <li class="header__nav_item">
+                                <a href="./tariffs.html" class="header__nav-link is-active">Тарифи</a>
+                            </li>
+                            <li class="header__nav_item">
+                                <a href="./contacts.html" class="header__nav-link">Контакти</a>
+                            </li>
+                            <li class="header__nav_item dropdown" data-js-dropdown>
+                                <p class="header__nav-link" >Документи
+                                    <span class="material-symbols-outlined dropdown-icon">
+                                    arrow_drop_down
+                                </span>
+                                </p>
+                                <ul class="dropdown__menu" data-js-dropdown-menu>
+                                    <li class="dropdown__menu-list">
+                                        <a class="dropdown__menu-link" href="./certificate.html">Свідоцтво</a>
+                                    </li>
+                                    <li class="dropdown__menu-list">
+                                        <a class="dropdown__menu-link" href="./decisionNKRZi">Рішення НКРЗі</a>
+                                    </li>
+                                    <li class="dropdown__menu-list">
+                                        <a class="dropdown__menu-link" href="./licenses">Ліцензії</a>
+                                    </li>
+                                    <li class="dropdown__menu-list">
+                                        <a class="dropdown__menu-link" href="/">Якість телекомунікаційних послуг</a>
+                                    </li>
+                                    <li class="dropdown__menu-list">
+                                        <a class="dropdown__menu-link" href="/">Правила надання та отримання телекомунікаційних послуг</a>
+                                    </li>
+                                    <li class="dropdown__menu-list">
+                                        <a class="dropdown__menu-link" href="/">Закон про телекомунікації</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav_item">
+                                <a href="./offer.html" class="header__nav-link">Оферта</a>
+                            </li>
+                            <li class="header__nav_item">
+                                <a href="/" class="header__nav-link">Особистий кабінет</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <button class="header__burger-button burger-button visible-mobile"
+                        type="button"
+                        aria-label="Open menu"
+                        title="Open menu"
+                        data-js-header-burger-button
+                >
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section__header container">
+                <p class="section__header-name">Тарифи</p>
+                <p class="section__header-desc">Обирайте швидкість, яка підходить саме вам<br />
+                    Стабільний інтернет для дому та бізнесу
+                </p>
+            </div>
+            <div class="tabs" data-js-tabs>
+                <p class="visually-hidden" id="tariffs-category-title">
+                    tariffs category
+                </p>
+                <div class="tabs__header">
+                    <div
+                        class="tabs__buttons container"
+                        role="tablist"
+                        aria-labelledby="tariffs-category-title"
+                    >
+                        <button
+                                class="tabs__button is-active"
+                                id ="tab-1"
+                                type="button"
+                                role ="tab"
+                                aria-controls="tabpanel-1"
+                                data-js-tabs-button
+                                aria-selected="true"
+                        >
+                            100 Mbit/s
+                        </button>
+                        <button
+                                class="tabs__button"
+                                id ="tab-2"
+                                type="button"
+                                role ="tab"
+                                aria-controls="tabpanel-2"
+                                data-js-tabs-button
+                                aria-selected="false"
+                                tabindex="-1"
+                        >
+                            200 Mbit/s
+                        </button>
+                    </div>
+                </div>
+                <div class="tabs__body">
+                    <div
+                        class="tabs__content is-active"
+                        id="tabpanel-1"
+                        aria-labelledby="tab-1"
+                        tabindex="0"
+                        data-js-tabs-content
+                    >
+                        <div class="tariffs__body container">
+                            <div class="tariffs__card">
+                                <div class="tariffs__card-name">
+                                    <p>Пакет підключення (UNLIMITED) багатоповерхові будинки:</p>
+                                </div>
+                                <div class="tariffs__card-desc">
+                                    <p class="tariffs__card-desc-speed">100 Mbit/s</p>
+                                    <div class="tariffs__card-desc-cost-time">
+                                        <p class="tariffs__card-desc-cost">220 ₴</p><p class="tariffs__card-desc-time">в місяць</p>
+                                    </div>
+                                </div>
+                                <img
+                                        src="images/tariffs/apartment.jpg"
+                                        alt=""
+                                        width="445" height="200" loading="lazy"
+                                >
+                                <div class="tariffs__card-buttons">
+                                    <button class="tariffs__card-button button" type="button">Замовити</button>
+                                </div>
+                            </div>
+                            <div class="tariffs__card">
+                                <div class="tariffs__card-name">
+                                    <p>Пакет підключення (UNLIMITED) приватний сектор:</p>
+                                </div>
+                                <div class="tariffs__card-desc">
+                                    <p class="tariffs__card-desc-speed">100 Mbit/s</p>
+                                    <div class="tariffs__card-desc-cost-time">
+                                        <p class="tariffs__card-desc-cost">240 ₴</p><p class="tariffs__card-desc-time">в місяць</p>
+                                    </div>
+                                </div>
+                                <img
+                                        src="./images/tariffs/private_house.jpg"
+                                        alt=""
+                                        width="445" height="200" loading="lazy"
+                                >
+                                <div class="tariffs__card-buttons">
+                                    <button class="tariffs__card-button button" type="button">Замовити</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div
+                        class="tabs__content"
+                        id="tabpanel-2"
+                        aria-labelledby="tab-2"
+                        tabindex="0"
+                        data-js-tabs-content
+                    >
+                        <div class="tariffs__body container">
+                            <div class="tariffs__card">
+                                <div class="tariffs__card-name">
+                                    <p>Пакет підключення (UNLIMITED) багатоповерхові будинки:</p>
+                                </div>
+                                <div class="tariffs__card-desc">
+                                    <p class="tariffs__card-desc-speed">200 Mbit/s</p>
+                                    <div class="tariffs__card-desc-cost-time">
+                                        <p class="tariffs__card-desc-cost">300 ₴</p><p class="tariffs__card-desc-time">в місяць</p>
+                                    </div>
+                                </div>
+                                <img
+                                        src="images/tariffs/apartment.jpg"
+                                        alt=""
+                                        width="445" height="200" loading="lazy"
+                                >
+                                <div class="tariffs__card-buttons">
+                                    <button class="tariffs__card-button button" type="button">Замовити</button>
+                                </div>
+                            </div>
+                            <div class="tariffs__card">
+                                <div class="tariffs__card-name">
+                                    <p>Пакет підключення (UNLIMITED) приватний сектор:</p>
+                                </div>
+                                <div class="tariffs__card-desc">
+                                    <p class="tariffs__card-desc-speed">200 Mbit/s</p>
+                                    <div class="tariffs__card-desc-cost-time">
+                                        <p class="tariffs__card-desc-cost">300 ₴</p><p class="tariffs__card-desc-time">в місяць</p>
+                                    </div>
+                                </div>
+                                <img
+                                        src="./images/tariffs/private_house.jpg"
+                                        alt=""
+                                        width="445" height="200" loading="lazy"
+                                >
+                                <div class="tariffs__card-buttons">
+                                    <button class="tariffs__card-button button" type="button">Замовити</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer class="footer">
+       <div class="footer-innner container">
+           <div class="footer__body">
+               <nav class="footer__nav">
+                   <div class="footer__nav-column">
+                       <ul class="footer__nav-list">
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Новини</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Про компанію</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Тарифи</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Контакти</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Оферта</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Особистий кабінет</a>
+                           </li>
+                       </ul>
+                   </div>
+                   <div class="footer__nav-column">
+                       <ul class="footer__nav-list">
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Свідоцтво</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Рішення НКРЗі</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Ліцензії</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Якість телекомунікаційних послуг</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Правила надання та отримання телекомунікаційних послуг</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Закон про телекомунікації</a>
+                           </li>
+                       </ul>
+                   </div>
+               </nav>
+           </div>
+           <div class="footer-extra">
+               <p class="footer__copyright">© ТОВ “Будинок Інформаційних Технологій”, 2010 - 2026</p>
+           </div>
+       </div>
+   </footer>
+</body>
+</html>

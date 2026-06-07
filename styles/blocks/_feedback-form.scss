@@ -1,0 +1,29 @@
+@use '../helpers' as *;
+
+.feedback-form {
+  display: grid;
+  gap: fluid(50, 20) fluid(50, 40);
+
+  @include mobile-m-above {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__cell {
+    &-wide {
+      grid-column: -1 / 1;
+    }
+  }
+
+  &__actions {
+    justify-items: center;
+
+    @include mobile {
+      justify-items: stretch;
+    }
+  }
+
+  &__submit-button {
+    display: flex;
+    font-size: rem(20);
+  }
+}

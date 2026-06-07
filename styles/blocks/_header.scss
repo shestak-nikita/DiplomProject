@@ -1,0 +1,140 @@
+@use '../helpers' as *;
+
+.header {
+  padding-top: rem(20);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color:  var(--color-background);
+  animation-name: scrolling-header;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: rem(100) rem(200);
+
+  @keyframes scrolling-header {
+    to {
+      box-shadow: 0 0 1rem 0 var(--color-dark);
+    }
+  }
+
+  &__body {
+
+    background-color:  var(--color-milk);
+
+    &-inner {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      gap: rem(100);
+      padding-inline: rem(20);
+
+      @include tablet {
+        gap: rem(20);
+        padding-inline: rem(10);
+      }
+
+      @include mobile {
+        justify-content: space-between;
+        padding-inline: rem(20);
+      }
+    }
+  }
+
+  &__overlay {
+
+    @include mobile-above {
+      display: contents;
+    }
+
+    @include mobile {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 3rem;
+      padding: 1rem;
+      background-color: var(--color-light);
+      transition-duration: var(--transition-duration);
+
+      &:not(.is-active) {
+        @include hide;
+
+        translate: 100%;
+      }
+    }
+  }
+
+  &__nav {
+
+    @include mobile {
+      overflow-y: auto;
+    }
+
+    &-list {
+      display: flex;
+      column-gap: rem(30);
+
+      @include laptop {
+        column-gap: rem(20);
+      }
+
+      @include tablet {
+        column-gap: rem(15);
+      }
+
+      @include mobile {
+        flex-direction: column;
+        row-gap: 1rem;
+      }
+    }
+
+    &-link {
+      color: var(--color-grey);
+      font-size: rem(18);
+      padding-bottom: rem(20);
+
+      @include laptop {
+        font-size: rem(16);
+        padding-bottom: rem(18);
+      }
+
+      @include tablet {
+        font-size: rem(14);
+        padding-bottom: rem(16);
+      }
+
+      @include mobile {
+        font-size: rem(18);
+        padding-bottom: 0;
+      }
+
+      &.is-active {
+        color: var(--color-blue);
+        border-bottom: rem(3) solid;
+        pointer-events: none;
+        font-size: rem(18);
+        padding-bottom: rem(20);
+
+        @include laptop {
+          font-size: rem(16);
+          padding-bottom: rem(18);
+        }
+
+        @include tablet {
+          font-size: rem(14);
+          padding-bottom: rem(16);
+        }
+
+        @include mobile {
+          font-size: rem(18);
+          padding-bottom: rem(10);
+        }
+      }
+    }
+
+    p:hover {
+      color: var(--color-blue);
+    }
+  }
+}

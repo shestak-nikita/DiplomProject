@@ -1,0 +1,67 @@
+@use '../helpers' as *;
+
+.dropdown {
+
+  &__menu {
+
+    width: 100%;
+    justify-content: center;
+    font-size: rem(16);
+    padding-inline: rem(10);
+    padding-block: rem(20);
+    box-shadow: var(--shadow-bottom);
+
+
+    //border: rem(5) solid var(--color-light);
+    background: var(--color-light);
+    //border-radius: rem(10);
+    transition-duration: var(--transition-duration);
+    display: none;
+
+    @include mobile-above {
+      top: fluid(129, 101.75);
+      left: 0;
+      position: absolute;
+    }
+
+    @include mobile {
+       justify-content: start;
+    }
+
+    &-link {
+      color: var(--color-grey);
+
+      @include laptop {
+        font-size: rem(16);
+      }
+
+      @include tablet {
+        font-size: rem(14);
+      }
+
+      @include mobile {
+        font-size: rem(18);
+      }
+    }
+  }
+
+  &-icon {
+    position: relative;
+    transform: rotate(0deg);
+    transition: var(--transition-duration);
+  }
+
+  p {
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+  }
+
+  &:hover .dropdown__menu {
+    display: grid;
+    row-gap: rem(10);
+  }
+  &:hover .dropdown-icon {
+    transform: rotate(180deg);
+  }
+}

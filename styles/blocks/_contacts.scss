@@ -1,0 +1,57 @@
+@use '../helpers' as *;
+
+.contacts {
+
+  &__body {
+    margin-top: rem(40);
+    margin-inline: rem(40);
+    padding: rem(20);
+    border-radius: rem(10);
+    background: var(--color-milk);
+
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: rem(40);
+
+
+    @include tablet-above {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      column-gap: rem(20);
+    }
+
+    @include mobile {
+      margin-inline: rem(20);
+    }
+  }
+
+  &__list {
+    display: grid;
+    margin-left: rem(100);
+    padding: rem(20);
+    gap: rem(40);
+    background-color: var(--color-light);
+    box-shadow: var(--shadow);
+    border-radius: rem(10);
+
+    @include laptop {
+      margin-left: rem(0);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: start;
+    gap: rem(10);
+
+
+    &-desc {
+      font-size: rem(20);
+      font-weight: 500;
+
+      @include laptop {
+        font-size: rem(18);
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+@use '../helpers' as *;
+
+.tariffs {
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: rem(20);
+
+    &-desc {
+      padding-bottom: rem(20);
+      font-size: rem(16);
+
+      @include tablet {
+        font-size: rem(14);
+      }
+    }
+
+    @include mobile {
+      margin-inline: rem(20);
+      row-gap: rem(20);
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__card {
+    display: grid;
+    margin-left: auto;
+    margin-right: rem(20);
+    border-radius: rem(15);
+    max-width: fluid(445, 250);
+    background: var(--color-light);
+    box-shadow: var(--shadow);
+
+    @include mobile {
+      margin-right: auto;
+    }
+
+    &:last-child{
+      margin-left: rem(20);
+      margin-right: auto;
+
+      @include mobile {
+        margin-left: auto;
+      }
+    }
+
+    &-name {
+      font-size: rem(24);
+      padding-top: rem(15);
+      padding-inline: rem(15);
+
+      @include laptop {
+        font-size: rem(20);
+      }
+
+      @include tablet-s {
+        font-size: rem(18);
+      }
+
+      @include mobile {
+        font-size: rem(14);
+      }
+    }
+
+    &-buttons {
+      justify-items: center;
+      padding: rem(20);
+
+      @include mobile {
+        justify-items: stretch;
+      }
+    }
+
+    &-button {
+      display: flex;
+      font-size: rem(20);
+    }
+
+    &-desc {
+
+      &-speed {
+        font-size: rem(48);
+        font-weight: 500;
+        color: var(--color-blue);
+        padding-inline: rem(15);
+
+        @include laptop {
+          font-size: rem(36);
+        }
+
+        @include tablet {
+          font-size: rem(24);
+        }
+
+        @include mobile {
+          font-size: rem(20);
+        }
+      }
+
+      &-cost-time {
+        display: flex;
+        align-items: center;
+        gap: rem(10);
+        padding-inline: rem(15);
+        padding-bottom: rem(15);
+      }
+
+      &-cost {
+        font-size: rem(48);
+        font-weight: 500;
+
+        @include laptop {
+          font-size: rem(36);
+        }
+
+        @include tablet {
+          font-size: rem(24);
+        }
+
+        @include mobile {
+          font-size: rem(20);
+        }
+      }
+
+      &-time {
+        display: flex;
+        align-self: end;
+        padding-bottom: rem(10);
+        font-size: rem(24);
+
+        @include laptop {
+          font-size: rem(20);
+          padding-bottom: rem(6);
+        }
+
+        @include tablet {
+          font-size: rem(16);
+          padding-bottom: rem(2);
+        }
+      }
+    }
+
+    &-links {
+      display: flex;
+      justify-content: center;
+      padding: rem(20);
+
+    }
+  }
+
+  &__speed {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}

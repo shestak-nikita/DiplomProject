@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Будинок Інформаційних Технологій | Контакти</title>
+    <link rel="shortcut icon" href="images/x-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.1/imask.min.js" defer></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "QuspZDNVdtUsVWlsD",
+            });
+        })();
+    </script>
+    <script src="./scripts/SendMessage.js"></script>
+    <script src="./scripts/main.js" type="module"></script>
+</head>
+<body>
+    <header class="header" data-js-header>
+        <div class="header__body">
+            <div class="header__body-inner container">
+                <a
+                        class="header__logo logo"
+                        href="/"
+                        aria-label="Home"
+                        title="Home"
+                >
+                    <img
+                            src="./images/logoPadding-block20.svg"
+                            alt=""
+                            class="logo__image"
+                            width="200" height="109"
+                    >
+                </a>
+                <div class="header__overlay" data-js-header-overlay>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav_item">
+                                <a href="./index.html" class="header__nav-link">Новини</a>
+                            </li>
+                            <li class="header__nav_item">
+                                <a href="./company.html" class="header__nav-link">Про компанію</a>
+                            </li>
+                            <li class="header__nav_item">
+                                <a href="./tariffs.html" class="header__nav-link">Тарифи</a>
+                            </li>
+                            <li class="header__nav_item">
+                                <a href="./contacts.html" class="header__nav-link is-active">Контакти</a>
+                            </li>
+                            <li class="header__nav_item dropdown" data-js-dropdown>
+                                <p class="header__nav-link" >Документи
+                                    <span class="material-symbols-outlined dropdown-icon">
+                                    arrow_drop_down
+                                </span>
+                                </p>
+                                <ul class="dropdown__menu" data-js-dropdown-menu>
+                                    <li class="dropdown__menu-list">
+                                        <a class="dropdown__menu-link" href="./certificate.html">Свідоцтво</a>
+                                    </li>
+                                    <li class="dropdown__menu-list">
+                                        <a class="dropdown__menu-link" href="./decisionNKRZi">Рішення НКРЗі</a>
+                                    </li>
+                                    <li class="dropdown__menu-list">
+                                        <a class="dropdown__menu-link" href="./licenses">Ліцензії</a>
+                                    </li>
+                                    <li class="dropdown__menu-list">
+                                        <a class="dropdown__menu-link" href="/">Якість телекомунікаційних послуг</a>
+                                    </li>
+                                    <li class="dropdown__menu-list">
+                                        <a class="dropdown__menu-link" href="/">Правила надання та отримання телекомунікаційних послуг</a>
+                                    </li>
+                                    <li class="dropdown__menu-list">
+                                        <a class="dropdown__menu-link" href="/">Закон про телекомунікації</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav_item">
+                                <a href="./offer.html" class="header__nav-link">Оферта</a>
+                            </li>
+                            <li class="header__nav_item">
+                                <a href="/" class="header__nav-link">Особистий кабінет</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <button class="header__burger-button burger-button visible-mobile"
+                        type="button"
+                        aria-label="Open menu"
+                        title="Open menu"
+                        data-js-header-burger-button
+                >
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section__header container">
+                <p class="section__header-name">Контакти</p>
+                <p class="section__header-desc">Ми завжди на зв'язку та готові допомогти</p>
+            </div>
+            <div class="contacts__body container">
+                <div class="contacts__list">
+                    <div class="contacts__item">
+                        <div class="contacts__item-icon">
+                            <img
+                                    src="images/contacts/pen.svg"
+                                    alt=""
+                                    width="60" height="60" loading="lazy"
+                            >
+                        </div>
+                        <div class="contacts__item-desc">
+                            Бажаєте нам написати?<br />
+                            Заповніть форму і наш спеціалист зв'яжеться з Вами найближчим часом
+                        </div>
+                    </div>
+                    <form class="feedback-form" action="/" onsubmit="event.preventDefault(); SendMessage(event);">
+                        <div class="feedback-form__cell field">
+                            <label class="field__label" for="LastName">Прізвище <span class="field__required-star">*</span></label>
+                            <input
+                                    class="field__control"
+                                    id="LastName"
+                                    type="text"
+                                    name="LastName"
+                                    placeholder="Шевченко"
+                                    required
+                            />
+                        </div>
+                        <div class="feedback-form__cell field">
+                            <label class="field__label" for="FirstName">Ім'я <span class="field__required-star">*</span></label>
+                            <input
+                                    class="field__control"
+                                    id="FirstName"
+                                    type="text"
+                                    name="FirstName"
+                                    placeholder="Тарас"
+                                    required
+                            />
+                        </div>
+                        <div class="feedback-form__cell field">
+                            <label class="field__label" for="email">Email <span class="field__required-star">*</span></label>
+                            <input
+                                    class="field__control"
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    placeholder="example@email.com"
+                                    required
+                            />
+                        </div>
+                        <div class="feedback-form__cell field">
+                            <label class="field__label" for="PhoneNumber">Телефон <span class="field__required-star">*</span></label>
+                            <input
+
+                                    class="field__control"
+                                    id="PhoneNumber"
+                                    placeholder="(999) 999-99-99"
+                                    data-js-input-mask="(000) 000-00-00"
+                                    required
+                                    type="tel"
+                                    name="PhoneNumber"
+                            />
+                        </div>
+                        <div class="feedback-form__cell feedback-form__cell-wide field">
+                            <label class="field__label" for="message">Повідомлення <span class="field__required-star">*</span></label>
+                            <textarea
+                                    class="field__control"
+                                    id="message"
+                                    placeholder="Опишіть ваше питання якомога детальніше – це допоможе нам швидше вам відповісти..."
+                                    required
+                                    name="message"
+                            ></textarea>
+                        </div>
+                        <div class="feedback-form__cell feedback-form__cell-wide">
+                            <div class="feedback-form__actions">
+                                <button
+                                        class="feedback-form__submit-button button"
+                                        type="submit"
+                                >
+                                    Відправити
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card">
+                    <div class="card__name">
+                        <div class="card__name-icon">
+                            <img
+                                    src="images/contacts/whitephone.svg"
+                                    alt=""
+                                    width="60" height="60" loading="lazy"
+                            >
+                        </div>
+                        <div class="card__name-desc">
+                            Хочете щось запитати?<br />
+                            Подзвоніть нам!
+                        </div>
+                    </div>
+                    <div class="card__list">
+                        <div class="card__item">
+                            <div class="card__item-icon">
+                                <img
+                                        src="images/contacts/clock.svg"
+                                        alt=""
+                                        width="50" height="50" loading="lazy"
+                                >
+                            </div>
+                            <div class="card__item-body">
+                                <div class="card__item-name">
+                                    Графік роботи:
+                                </div>
+                                <div class="card__item-desc">
+                                    <div><span class="card__item-desc-workdays">пн-пт</span> 09:00 - 18:00</div>
+                                    <div><span class="card__item-desc-weekend">сб-нд</span> вихідний</div>
+                                    перерва: 13:00 - 14:00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__item">
+                            <div class="card__item-icon">
+                                <img
+                                        src="images/contacts/headset.svg"
+                                        alt=""
+                                        width="50" height="50" loading="lazy"
+                                >
+                            </div>
+                            <div class="card__item-body">
+                                <div class="card__item-name">
+                                    Абонентський відділ:
+                                </div>
+                                <div class="card__item-desc">
+                                    <span class="icon icon--phone">+38 (057) 729-80-37 (Тел./Факс)</span>
+                                    <span class="icon icon--vodafone">+38 (050) 364-51-10</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__item">
+                            <div class="card__item-icon">
+                                <img
+                                        src="images/contacts/tools.svg"
+                                        alt=""
+                                        width="50" height="50" loading="lazy"
+                                >
+                            </div>
+                            <div class="card__item-body">
+                                <div class="card__item-name">
+                                    Технічна підтримка:
+                                </div>
+                                <div class="card__item-desc">
+                                    <span class="icon icon--phone">+38 (057) 729-80-38</span>
+                                    <span class="icon icon--vodafone">+38 (050) 364-51-10 + кнопка 2</span>
+                                    <span class="icon icon--kievstar">+38 (067) 701-36-04</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__item">
+                            <div class="card__item-icon">
+                                <img
+                                        src="images/contacts/mail.svg"
+                                        alt=""
+                                        width="50" height="50" loading="lazy"
+                                >
+                            </div>
+                            <div class="card__item-body">
+                                <div class="card__item-name">
+                                    E-mail:
+                                </div>
+                                <div class="card__item-desc">
+                                    <span class="icon icon--link">service@bit.kh.ua</span>
+                                    <span class="icon icon--link">support@bit.kh.ua</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer class="footer">
+       <div class="footer-innner container">
+           <div class="footer__body">
+               <nav class="footer__nav">
+                   <div class="footer__nav-column">
+                       <ul class="footer__nav-list">
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Новини</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Про компанію</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Тарифи</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Контакти</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Оферта</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Особистий кабінет</a>
+                           </li>
+                       </ul>
+                   </div>
+                   <div class="footer__nav-column">
+                       <ul class="footer__nav-list">
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Свідоцтво</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Рішення НКРЗі</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Ліцензії</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Якість телекомунікаційних послуг</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Правила надання та отримання телекомунікаційних послуг</a>
+                           </li>
+                           <li class="footer__nav-item">
+                               <a href="/" class="footer__nav-link">Закон про телекомунікації</a>
+                           </li>
+                       </ul>
+                   </div>
+               </nav>
+           </div>
+           <div class="footer-extra">
+               <p class="footer__copyright">© ТОВ “Будинок Інформаційних Технологій”, 2010 - 2026</p>
+           </div>
+       </div>
+   </footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/section';
+@use 'blocks/icon';
+@use 'blocks/logo';
+@use 'blocks/burger-button';
+@use 'blocks/button';
+@use 'blocks/header';
+@use 'blocks/dropdown';
+@use 'blocks/footer';
+@use 'blocks/news';
+@use 'blocks/company';
+@use 'blocks/tabs';
+@use 'blocks/tariffs';
+@use 'blocks/contacts';
+@use 'blocks/feedback-form';
+@use 'blocks/field';
+@use 'blocks/card';

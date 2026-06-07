@@ -1,0 +1,71 @@
+@use '../helpers' as *;
+
+.footer {
+  margin-top: rem(40);
+  background: linear-gradient(90deg, #0071df 0%, #003d79 100%);
+
+  &__body {
+    padding-block: rem(50);
+
+    @include mobile {
+      padding-block: rem(20);
+    }
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    column-gap: rem(50);
+
+    @include mobile {
+      column-gap: rem(20);
+      padding-inline: rem(10);
+      row-gap: rem(20);
+    }
+
+    &-column {
+      display: grid;
+      &:first-child {
+        justify-content: end;
+      }
+    }
+
+    &-link {
+
+      color: var(--color-light);
+      font-size: rem(16);
+
+      @include hover {
+        color: var(--color-grey);
+      }
+
+      @include laptop {
+        font-size: rem(16);
+      }
+
+      @include tablet {
+        font-size: rem(14);
+      }
+    }
+  }
+
+  &-extra {
+    padding-inline: rem(20);
+    padding-bottom: rem(20);
+  }
+
+  &__copyright {
+    color: var(--color-light);
+    font-size: rem(16);
+    //font-size: fluid(16, 14);
+
+    @include laptop {
+      font-size: rem(16);
+    }
+
+    @include tablet {
+      font-size: rem(14);
+    }
+  }
+}

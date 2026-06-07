@@ -1,0 +1,30 @@
+@use '../helpers' as *;
+
+.section {
+  margin-top: rem(40);
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-light);
+    background: linear-gradient(90deg, #0071df 0%, #003d79 100%);
+    gap: rem(20);
+    margin-inline: rem(40);
+    border-radius: rem(10);
+    padding-inline: rem(40);
+    padding-block: rem(20);
+
+    &-name {
+      font-size: fluid(40, 18);
+      font-weight: 600;
+    }
+
+    &-desc {
+      font-size: fluid(18, 14);
+    }
+
+    @include mobile {
+      margin-inline: rem(20);
+    }
+  }
+}

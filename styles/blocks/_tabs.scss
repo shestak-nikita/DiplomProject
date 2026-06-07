@@ -1,0 +1,57 @@
+@use '../helpers' as *;
+
+.tabs {
+  margin-top: rem(40);
+  margin-inline: rem(40);
+  background: var(--color-milk);
+  border-radius: rem(10);
+
+  @include mobile {
+    margin-inline: rem(20);
+  }
+
+  &__header {
+    display: flex;
+    margin-top: rem(20);
+  }
+
+  &__buttons {
+    padding-top: rem(20);
+  }
+
+  &__button {
+    font-size: rem(24);
+    font-weight: 500;
+    background: var(--color-light);
+    padding: rem(10);
+    border-radius: rem(10);
+    border: #{rem(2)} solid var(--color-background);
+
+    @include hover {
+      color: var(--color-blue);
+      border-color: var(--color-blue);
+    }
+
+    &.is-active {
+      color: var(--color-light);
+      background: var(--gradient);
+      pointer-events: none;
+    }
+
+    @include laptop {
+      font-size: rem(18);
+    }
+
+    @include mobile {
+      font-size: rem(16);
+    }
+
+  }
+
+  &__content {
+    &:not(.is-active) {
+      display: none;
+    }
+  }
+
+}

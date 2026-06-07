@@ -1,0 +1,29 @@
+@use 'helpers' as *;
+
+:root {
+  --color-light: #ffffff;
+  --color-dark: #000000;
+  --color-background: #EAEAED;
+  --color-milk: #F8F8F8;
+  --color-blue: #0071DF;
+  --color-dark-blue: #003d79;
+  --color-grey: #2f2f2f;
+  --color-accent: #E6EFFF;
+
+  --font-family-base: 'Finlandica', sans-serif;
+
+  --container-width: #{rem(1840)};
+  --cobtainer-padding-x: #{rem(16)};
+
+  --transition-duration: 0.2s;
+
+  --gradient: linear-gradient(90deg, #0071df 0%, #003d79 100%);
+  --gradient-dark: linear-gradient(90deg, #0071df 0%, #003d79 0.01%);;
+
+  --shadow: 0 0 #{rem(2)} 0 rgba(0, 0, 0, 0.25);
+  --shadow-bottom: 0 #{rem(4)} #{rem(2)} #{rem(-5)} rgba(0, 0, 0, 0.25);
+
+  @include laptop {
+    --container-width: #{rem(1200)};
+  }
+}

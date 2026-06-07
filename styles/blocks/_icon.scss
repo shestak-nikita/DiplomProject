@@ -1,0 +1,44 @@
+@use '../helpers' as *;
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  column-gap: rem(10);
+
+  &::before {
+    --size: #{rem(20)};
+
+    @include square(var(--size));
+
+    content: '';
+    flex-shrink: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &--phone {
+    &::before {
+      background-image: url('../../icons/phone.svg');
+    }
+  }
+
+  &--vodafone {
+    &::before {
+      background-image: url('../../icons/vodafone.svg');
+    }
+  }
+
+  &--kievstar {
+    &::before {
+      background-image: url('../../icons/kievstar.svg');
+    }
+  }
+
+  &--link {
+    &::before {
+      background-image: url('../../icons/link-alt.svg');
+    }
+  }
+
+}

@@ -1,0 +1,25 @@
+@use '../helpers' as *;
+
+.company {
+
+  &__body {
+    margin-top: rem(40);
+    margin-inline: rem(40);
+    padding: rem(20);
+    border-radius: rem(10);
+    background: var(--color-milk);
+
+    @include mobile {
+      margin-inline: rem(20);
+    }
+
+    &-desc {
+      font-size: rem(16);
+
+      @include tablet {
+
+        font-size: rem(14);
+      }
+    }
+  }
+}
