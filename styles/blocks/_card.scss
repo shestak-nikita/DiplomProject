@@ -22,6 +22,10 @@
     padding-left: rem(20);
     gap: rem(10);
 
+    @include mobile {
+      padding-left: rem(0);
+    }
+
     &-desc {
       font-size: rem(20);
       font-weight: 500;
@@ -68,6 +72,10 @@
       flex-direction: column;
       align-items: start;
       font-size: rem(16);
+
+      @include mobile {
+        font-size: rem(14);
+      }
 
       &-workdays {
         padding: 0 rem(4);

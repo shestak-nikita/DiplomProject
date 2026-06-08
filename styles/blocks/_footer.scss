@@ -28,6 +28,10 @@
       display: grid;
       &:first-child {
         justify-content: end;
+
+        @include mobile {
+          justify-content: center;
+        }
       }
     }
 

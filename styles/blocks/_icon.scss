@@ -5,6 +5,7 @@
   align-items: center;
   column-gap: rem(10);
 
+
   &::before {
     --size: #{rem(20)};
 
@@ -18,24 +19,28 @@
   }
 
   &--phone {
+    align-items: start;
     &::before {
       background-image: url('/DiplomProject/icons/phone.svg');
     }
   }
 
   &--vodafone {
+    align-items: start;
     &::before {
       background-image: url('/DiplomProject/icons/vodafone.svg');
     }
   }
 
   &--kievstar {
+    align-items: start;
     &::before {
       background-image: url('/DiplomProject/icons/kievstar.svg');
     }
   }
 
   &--link {
+    align-items: start;
     &::before {
       background-image: url('/DiplomProject/icons/link-alt.svg');
     }
