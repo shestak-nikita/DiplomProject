@@ -1041,13 +1041,9 @@ a[class] {
   }
 }
 .tariffs__card-buttons {
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   padding: 1.25rem;
-}
-@media (width <= 47.99875rem) {
-  .tariffs__card-buttons {
-    justify-items: stretch;
-  }
 }
 .tariffs__card-button {
   display: flex;
@@ -1196,11 +1192,6 @@ a[class] {
 .feedback-form__actions {
   display: flex;
   justify-content: center;
-}
-@media (width <= 47.99875rem) {
-  .feedback-form__actions {
-    width: 100%;
-  }
 }
 .feedback-form__submit-button {
   display: flex;

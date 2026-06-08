@@ -64,11 +64,12 @@
     }
 
     &-buttons {
-      justify-items: center;
+      display: flex;
+      justify-content: center;
       padding: rem(20);
 
       @include mobile {
-        justify-items: stretch;
+
       }
     }
 
