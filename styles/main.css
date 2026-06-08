@@ -369,16 +369,16 @@ a[class] {
   background-repeat: no-repeat;
 }
 .icon--phone::before {
-  background-image: url("/DiplomProject/images/icons/phone.svg");
+  background-image: url("/DiplomProject/icons/phone.svg");
 }
 .icon--vodafone::before {
-  background-image: url("/DiplomProject/images/icons/vodafone.svg");
+  background-image: url("/DiplomProject/icons/vodafone.svg");
 }
 .icon--kievstar::before {
-  background-image: url("/DiplomProject/images/icons/kievstar.svg");
+  background-image: url("/DiplomProject/icons/kievstar.svg");
 }
 .icon--link::before {
-  background-image: url("/DiplomProject/images/icons/link-alt.svg");
+  background-image: url("/DiplomProject/icons/link-alt.svg");
 }
 
 .logo {
