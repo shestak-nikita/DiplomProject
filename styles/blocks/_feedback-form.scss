@@ -15,10 +15,13 @@
   }
 
   &__actions {
-    justify-items: center;
+    display: flex;
+    justify-content: center;
 
     @include mobile {
-      justify-items: stretch;
+      //display: flex;
+      width: 100%;
+
     }
   }
 

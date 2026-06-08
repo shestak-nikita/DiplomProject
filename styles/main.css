@@ -369,16 +369,16 @@ a[class] {
   background-repeat: no-repeat;
 }
 .icon--phone::before {
-  background-image: url("../../icons/phone.svg");
+  background-image: url("../images/icons/phone.svg");
 }
 .icon--vodafone::before {
-  background-image: url("../../icons/vodafone.svg");
+  background-image: url("../images/icons/vodafone.svg");
 }
 .icon--kievstar::before {
-  background-image: url("../../icons/kievstar.svg");
+  background-image: url("../images/icons/kievstar.svg");
 }
 .icon--link::before {
-  background-image: url("../../icons/link-alt.svg");
+  background-image: url("../images/icons/link-alt.svg");
 }
 
 .logo {
@@ -1194,11 +1194,12 @@ a[class] {
   grid-column: -1/1;
 }
 .feedback-form__actions {
-  justify-items: center;
+  display: flex;
+  justify-content: center;
 }
 @media (width <= 47.99875rem) {
   .feedback-form__actions {
-    justify-items: stretch;
+    width: 100%;
   }
 }
 .feedback-form__submit-button {
