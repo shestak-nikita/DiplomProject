@@ -104,7 +104,7 @@
     }
 
     &-accent {
-      display: inline-flex;
+      justify-self: start;
       color: var(--color-dark-blue);
       background: var(--color-accent);
       font-weight: 500;
