@@ -2,3 +2,12 @@
 .idea
 dist
 node_modules
+blocks
+helpers
+_fonts.scss
+_globals.scss
+_normalize.scss
+_utils.scss
+_variables.scss
+main.scss
+main.css.map
