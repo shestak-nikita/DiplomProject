@@ -819,6 +819,8 @@ a[class] {
   }
 }
 .news__card-desc {
+  display: grid;
+  gap: 1rem;
   padding-bottom: 1.25rem;
   font-size: 1rem;
 }
